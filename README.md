@@ -100,4 +100,24 @@ vercel
 
 ---
 
+### 6. Codespaces (Preview Only)
+
+You can use GitHub Codespaces to preview your website in a live development environment:
+
+1. Open your repository in a Codespace (on GitHub, click the green “Code” button > “Codespaces” > “Create codespace on main”).
+2. In the Codespace terminal, run a local web server:
+    ```sh
+    # Python 3.x
+    python3 -m http.server 8000
+    ```
+    or
+    ```sh
+    npx serve .
+    ```
+3. Open the "Ports" tab in Codespaces and click "Open in Browser" for port 8000.
+
+**Note:** Codespaces previews are temporary and only accessible while your Codespace is running. For permanent public hosting, use one of the options above.
+
+---
+
 Choose any of the above for quick, free deployment of your static web project!
