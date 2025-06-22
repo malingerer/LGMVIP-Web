@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
   <link rel="stylesheet" href="main.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,30 +14,25 @@
   <div class="bg bg2"></div>
   <div class="bg bg3"></div>
   <div class="content">
-
     <div class="wrapper">
       <header>TO-DO LIST</header>
       <br>
       <div class="inputField">
-        <input type="text" placeholder="Add items in your list">
-        <button><i class="fas fa-plus"></i></button>
+        <input type="text" placeholder="Add items in your list" aria-label="Add items in your list">
+        <button aria-label="Add item"><i class="fas fa-plus"></i></button>
       </div>
-      <BR>
+      <br>
       <ul class="todoList">
-        <!-- data are comes from local storage -->
+        <!-- data comes from local storage -->
       </ul>
       <br>
       <div class="footer">
         <span>You have <span class="pendingTasks"></span> incomplete tasks</span>
-        <button>Reset</button>
+        <button aria-label="Reset list">Reset</button>
       </div>
     </div>
   </div>
-
-
-
   <script src="script.js"></script>
-
 </body>
 
 </html>
